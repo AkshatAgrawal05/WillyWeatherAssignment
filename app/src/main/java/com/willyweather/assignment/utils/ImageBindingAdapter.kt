@@ -1,8 +1,9 @@
 package com.willyweather.assignment.utils
 
+import android.net.Uri
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
-import com.bumptech.glide.Glide
+import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
 
 class ImageBindingAdapter {
 
@@ -11,7 +12,10 @@ class ImageBindingAdapter {
         @JvmStatic
         @BindingAdapter("imageUrl")
         fun loadImage(view: ImageView, url: String?) {
-            Glide.with(view.context).load(url).into(view)
+            GlideToVectorYou
+                .init()
+                .with(view.context)
+                .load(Uri.parse(url), view)
         }
     }
 }

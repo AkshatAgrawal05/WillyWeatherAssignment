@@ -1,5 +1,5 @@
 package com.willyweather.assignment.data.model
 
 data class Filters(
-    val any: Any? = null
+    val any: String? = null
 )

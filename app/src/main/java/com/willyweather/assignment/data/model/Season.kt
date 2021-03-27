@@ -1,7 +1,7 @@
 package com.willyweather.assignment.data.model
 
 data class Season(
-    val winner: Any? = null,
+    val winner: String? = null,
     val currentMatchday: Int? = null,
     val endDate: String? = null,
     val id: Int? = null,

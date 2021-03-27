@@ -1,5 +1,6 @@
 package com.willyweather.assignment.data.model
 
+
 data class TeamsItem(
 	val area: Area? = null,
 	val venue: String? = null,
