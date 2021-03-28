@@ -12,5 +12,5 @@ A simple app created for willyweather skills assessment that loads information f
  * Navigation
 
 ScreenShots:
-<img align="right" src="https://github.com/AkshatAgrawal05/WillyWeatherAssignment/blob/master/assets/home.png" width="200">
-<img align="right" src="https://github.com/AkshatAgrawal05/WillyWeatherAssignment/blob/master/assets/details.png" width="200">
+<img align="left" src="https://github.com/AkshatAgrawal05/WillyWeatherAssignment/blob/master/assets/home.png" width="200">
+<img align="left" src="https://github.com/AkshatAgrawal05/WillyWeatherAssignment/blob/master/assets/details.png" width="200">
