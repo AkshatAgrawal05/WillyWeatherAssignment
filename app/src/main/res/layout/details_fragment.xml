@@ -35,14 +35,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{`Name : ` + team.name}"
+                android:text="@{`Name : ` + team.name == null ? `` : team.name}"
                 android:textSize="25dp"
                 tools:text="Name" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{`TLA: ` + team.tla}"
+                android:text="@{`TLA: ` + team.tla == null ? `` : team.tla}"
                 android:textSize="18dp"
                 tools:text="Short Name" />
 
@@ -56,13 +56,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{`Address : ` + team.address}"
+                android:text="@{`Address : ` + team.address == null ? `` : team.address}"
                 tools:text="Address" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@{`Venue : ` + team.venue}"
+                android:text="@{`Venue : ` + team.venue == null ? `` : team.venue}"
                 tools:text="Venue" />
 
         </LinearLayout>
