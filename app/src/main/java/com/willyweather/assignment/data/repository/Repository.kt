@@ -14,4 +14,10 @@ class Repository @Inject constructor(
         networkCall = { remoteDataSource.getTeamsList(compId) },
         saveCallResult = { localDataSource.insertAllTeams(it) }
     )
+
+    fun getTeamDetails(teamId: Int) = performGetOperation(
+        databaseQuery = { localDataSource.getTeamDetailsById(teamId) },
+        networkCall = { remoteDataSource.getTeamDetailsById(teamId) },
+        saveCallResult = { localDataSource.insertTeamDetails(it) }
+    )
 }

@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.willyweather.assignment.R
 import com.willyweather.assignment.databinding.HomeFragmentBinding
 import com.willyweather.assignment.utils.Resource
@@ -66,7 +68,10 @@ class HomeFragment : Fragment(), TeamsListAdapter.ItemClickListener {
     }
 
     override fun onItemClick(teamId: Int) {
-        TODO("Not yet implemented")
+        findNavController().navigate(
+            R.id.action_homeFragment_to_detailsFragment,
+            bundleOf("teamId" to teamId)
+        )
     }
 
 

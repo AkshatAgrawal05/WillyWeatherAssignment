@@ -12,10 +12,12 @@ class ImageBindingAdapter {
         @JvmStatic
         @BindingAdapter("imageUrl")
         fun loadImage(view: ImageView, url: String?) {
-            GlideToVectorYou
-                .init()
-                .with(view.context)
-                .load(Uri.parse(url), view)
+            if (url != null) {
+                GlideToVectorYou
+                    .init()
+                    .with(view.context)
+                    .load(Uri.parse(url), view)
+            }
         }
     }
 }

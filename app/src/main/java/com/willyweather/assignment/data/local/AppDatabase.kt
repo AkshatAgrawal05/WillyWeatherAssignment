@@ -6,9 +6,10 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.willyweather.assignment.data.model.Teams
+import com.willyweather.assignment.data.model.TeamsItem
 import com.willyweather.assignment.utils.DataConverter
 
-@Database(entities = [Teams::class], version = 1, exportSchema = false)
+@Database(entities = [Teams::class, TeamsItem::class], version = 1, exportSchema = false)
 @TypeConverters(DataConverter::class)
 abstract class AppDatabase : RoomDatabase() {
 
